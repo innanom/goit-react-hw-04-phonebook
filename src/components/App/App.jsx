@@ -39,11 +39,8 @@ const addContact = ({ name, number }) => {
    
     }
     else {
-         setContacts(prevContacts => ({
-        contacts: [contact, ...prevContacts],
-      }));
+         setContacts(prevContacts => [contact, ...prevContacts]);
     }
-      
   };
 
   const deleteContact = contactId => {
